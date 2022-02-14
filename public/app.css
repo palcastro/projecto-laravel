@@ -1,0 +1,23 @@
+body{
+    max-width: 600px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+p{
+    line-height:1.6;
+}
+
+article + article {
+    margin-top: 3rem;
+    border-top: 1px solid rgb(255, 89, 89);
+
+}
+body{
+    margin-top: 3%;
+}
+
+
+h1{
+    font-size: 30px;
+}

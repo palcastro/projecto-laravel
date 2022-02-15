@@ -44,12 +44,18 @@ class Post
         });
     }
 
-    public static function find($slug)
-    {
-        $post = static::all()->firstWhere('slug', $slug);
-        if(! $post) {
-            throw new ModelNotFoundException();
+    public static function find($slug){
+        return static::all()->firstWhere('slug', $slug);
+      }
+        public static function findorFail($slug)
+        {
+          //de todos los posts, encontrar el que tiene un slug que encaja con el solicitado//
+
+         $post = static::find($slug);
+
+         if(! $post) {
+           throw new ModelNotFoundException();
+         }
+         return $post;
         }
-        return $post;
-    }
-}
+      }

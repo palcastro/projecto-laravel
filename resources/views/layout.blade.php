@@ -13,7 +13,11 @@
 
 <body>
     {{ $slot }}
+    <!-- <header>
+    @yield('banner')
+    </header>
 
+    @yield('content') -->
 </body>
 
 </html>

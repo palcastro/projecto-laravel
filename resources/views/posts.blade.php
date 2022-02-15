@@ -1,4 +1,3 @@
-
 <x-layout>
     @foreach ($posts as $post)
     <article>
@@ -14,3 +13,5 @@
     </article>
 @endforeach
 </x-layout>
+
+

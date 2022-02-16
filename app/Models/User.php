@@ -21,6 +21,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        // pacotilla: $2y$10$eHzl9E7rEnOU4g.eywhKiuqfcVLbrdDr05fy4ZOsAyGwWnORHiHZi"
+        //laurel: => "$2y$10$g62nesOJ3Y.s3Wn5dZNrEO1elnvOu9o/FNsgvP2Ug3nFQND1J/YeC"
     ];
 
     /**
